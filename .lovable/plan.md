@@ -14,16 +14,11 @@ A mobile-first, single-page "wow moment" invitation site following the reel's fl
 4. **Counting Down to Forever** — live countdown (days/hours/minutes/seconds) to the Nikkah.
 5. **Program Timeline** — Nikkah ceremony, dinner, etc. (dummy entries).
 6. **Venue** — venue name, address, embedded map placeholder + "Open in Maps" link (dummy until confirmed).
-7. **RSVP** — name, attending (yes/no), number of guests, message; replies are **saved to the database**.
+7. **RSVP (visual only)** — name, attending (yes/no), message; submitting simply shows a warm thank-you confirmation. Nothing is stored — no backend needed.
 8. **Footer** — a graceful closing line with the couple's monogram.
 
 ## Music
 Soft romantic instrumental, downloaded from a royalty-free source and served via CDN asset. Autoplay muted-safe after cover tap, floating mute/unmute button.
-
-## Backend (Lovable Cloud)
-- Enable Cloud; `rsvps` table: id, name, attending, guests, message, created_at.
-- RLS: public INSERT allowed (invitation guests are anonymous), no public SELECT.
-- **Host dashboard at `/admin`**: protected route — you sign in to view all RSVP replies. (You'll create a host account on first visit.)
 
 ## Assets to generate
 1. Navy digital-camouflage seamless texture (CSS/tile).
@@ -33,6 +28,5 @@ Soft romantic instrumental, downloaded from a royalty-free source and served via
 Plus: background music file (royalty-free download).
 
 ## Verification
-- Build green + preview check of the full flow: cover tap → reveal → all sections → RSVP submit → row saved in database.
-- Small test asserting an RSVP insert is accepted and a blank name is rejected.
+- Build green + preview check of the full flow: cover tap → reveal → all sections → RSVP shows thank-you.
 - Playwright walkthrough with screenshots of cover, reveal, countdown, RSVP.
