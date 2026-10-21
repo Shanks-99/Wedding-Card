@@ -21,6 +21,7 @@ export const eventDetails = {
   venueName: "Grand Marina Banquet",
   venueAddress: "Clifton, Karachi",
   mapsQuery: "Clifton, Karachi",
+  familyName: "Rana",
   timeline: [
     { time: "5:30 PM", title: "Guests Arrival", note: "Tea & refreshments" },
     { time: "6:00 PM", title: "Nikkah Ceremony", note: "The solemn vow" },

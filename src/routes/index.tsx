@@ -280,7 +280,7 @@ function Index() {
             With prayers and love
           </p>
           <p className="mt-3 font-serif text-base text-muted-foreground">
-            The {eventDetails.groom.parents.split(" ")[0]} family looks forward to celebrating with you
+            The {eventDetails.familyName} family looks forward to celebrating with you
           </p>
         </footer>
       </main>
