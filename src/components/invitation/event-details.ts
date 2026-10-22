@@ -3,8 +3,8 @@
 
 export const eventDetails = {
   groom: {
-    name: "Lt. Umer",
-    fullName: "Lt. Umer",
+    name: "Lt. Bilal",
+    fullName: "Dr. Bilal",
     parents: "Mr. & Mrs. Rana Muhammad Ahsan",
     credential: "Pakistan Navy",
   },
@@ -30,9 +30,9 @@ export const eventDetails = {
   ],
   calendarLink:
     "https://calendar.google.com/calendar/render?action=TEMPLATE" +
-    "&text=" + encodeURIComponent("Nikkah Ceremony — Lt. Umer & Dr. Momina") +
+    "&text=" + encodeURIComponent("Nikkah Ceremony — Lt. Bilal & Dr. Momina") +
     "&dates=20270214T130000Z/20270214T160000Z" +
-    "&details=" + encodeURIComponent("Nikkah ceremony of Lt. Umer & Dr. Momina") +
+    "&details=" + encodeURIComponent("Nikkah ceremony of Lt. Bilal & Dr. Momina") +
     "&location=" + encodeURIComponent("Grand Marina Banquet, Clifton, Karachi"),
   mapsLink: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Clifton, Karachi"),
 } as const;

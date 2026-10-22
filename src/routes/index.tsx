@@ -11,23 +11,23 @@ import musicAsset from "@/assets/wedding-piano.mp3.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lt. Umer & Dr. Momina — Nikkah Invitation" },
+      { title: "Lt. Bilal & Dr. Momina — Nikkah Invitation" },
       {
         name: "description",
         content:
-          "Mr. & Mrs. Rana Muhammad Ahsan cordially invite you to the Nikkah ceremony of their beloved son Lt. Umer with Dr. Momina.",
+          "Mr. & Mrs. Rana Muhammad Ahsan cordially invite you to the Nikkah ceremony of their beloved son Lt. Bilal with Dr. Momina.",
       },
-      { property: "og:title", content: "Lt. Umer & Dr. Momina — Nikkah Invitation" },
+      { property: "og:title", content: "Lt. Bilal & Dr. Momina — Nikkah Invitation" },
       {
         property: "og:description",
-        content: "You are cordially invited to the Nikkah ceremony of Lt. Umer & Dr. Momina.",
+        content: "You are cordially invited to the Nikkah ceremony of Lt. Bilal & Dr. Momina.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Lt. Umer & Dr. Momina — Nikkah Invitation" },
+      { name: "twitter:title", content: "Lt. Bilal & Dr. Momina — Nikkah Invitation" },
       {
         name: "twitter:description",
-        content: "You are cordially invited to the Nikkah ceremony of Lt. Umer & Dr. Momina.",
+        content: "You are cordially invited to the Nikkah ceremony of Lt. Bilal & Dr. Momina.",
       },
     ],
   }),
@@ -88,7 +88,6 @@ function HeartDivider() {
 
 function Index() {
   const [opened, setOpened] = useState(false);
-  const [coverGone, setCoverGone] = useState(false);
   const [muted, setMuted] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
@@ -110,7 +109,7 @@ function Index() {
     <div className="relative min-h-screen">
       <audio ref={audioRef} src={musicAsset.url} loop preload="auto" />
 
-      {!coverGone && <CoverCard onOpen={handleOpen} onClosed={() => setCoverGone(true)} />}
+      {!opened && <CoverCard onOpen={handleOpen} />}
 
       {opened && (
         <button
@@ -275,7 +274,7 @@ function Index() {
         <footer className="px-6 pb-14 pt-6 text-center">
           <div className="gold-rule mx-auto max-w-xs" />
           <p className="mt-8 font-script text-5xl text-foreground">
-            U<span className="mx-2 text-2xl text-gold">&#10084;</span>M
+            B<span className="mx-2 text-2xl text-gold">&#10084;</span>M
           </p>
           <p className="mt-6 font-sans text-[0.68rem] uppercase tracking-[0.4em] text-muted-foreground">
             With prayers and love

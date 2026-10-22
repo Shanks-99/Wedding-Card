@@ -87,7 +87,7 @@ export function ScratchReveal() {
         <p className="font-serif text-lg text-foreground/80 mt-3 leading-relaxed">
           with Bismillah — <br />
           <span className="font-sans text-xs uppercase tracking-[0.3em] text-muted-foreground">
-            Umer &amp; Momina
+            Bilal &amp; Momina
           </span>
         </p>
       </div>
