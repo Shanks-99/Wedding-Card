@@ -11,23 +11,23 @@ import musicAsset from "@/assets/wedding-piano.mp3.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lt. Bilal & Dr. Momina — Nikkah Invitation" },
+      { title: "Lt. Umer & Dr. Momina — Wedding Invitation" },
       {
         name: "description",
         content:
-          "Mr. & Mrs. Rana Muhammad Ahsan cordially invite you to the Nikkah ceremony of their beloved son Lt. Bilal with Dr. Momina.",
+          "Mr. & Mrs. Rana Muhammad Ahsan cordially invite you to the wedding ceremony of their beloved son Lt. Umer with Dr. Momina.",
       },
-      { property: "og:title", content: "Lt. Bilal & Dr. Momina — Nikkah Invitation" },
+      { property: "og:title", content: "Lt. Umer & Dr. Momina — Wedding Invitation" },
       {
         property: "og:description",
-        content: "You are cordially invited to the Nikkah ceremony of Lt. Bilal & Dr. Momina.",
+        content: "You are cordially invited to the wedding ceremony of Lt. Umer & Dr. Momina.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Lt. Bilal & Dr. Momina — Nikkah Invitation" },
+      { name: "twitter:title", content: "Lt. Umer & Dr. Momina — Wedding Invitation" },
       {
         name: "twitter:description",
-        content: "You are cordially invited to the Nikkah ceremony of Lt. Bilal & Dr. Momina.",
+        content: "You are cordially invited to the wedding ceremony of Lt. Umer & Dr. Momina.",
       },
     ],
   }),
