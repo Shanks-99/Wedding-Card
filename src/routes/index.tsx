@@ -88,6 +88,7 @@ function HeartDivider() {
 
 function Index() {
   const [opened, setOpened] = useState(false);
+  const [coverGone, setCoverGone] = useState(false);
   const [muted, setMuted] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
@@ -109,7 +110,7 @@ function Index() {
     <div className="relative min-h-screen">
       <audio ref={audioRef} src={musicAsset.url} loop preload="auto" />
 
-      {!opened && <CoverCard onOpen={handleOpen} />}
+      {!coverGone && <CoverCard onOpen={handleOpen} onClosed={() => setCoverGone(true)} />}
 
       {opened && (
         <button
