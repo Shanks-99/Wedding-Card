@@ -151,12 +151,15 @@
 
 .card-3d-doors {
   position: relative;
-  width: 100%;
-  height: 100%;
-  height: 100dvh;
+  /* Maintain exact 864x1440 (3:5) aspect ratio so sides are NEVER cropped on mobile */
+  width: min(100vw, calc(100dvh * 0.6));
+  aspect-ratio: 864 / 1440;
+  max-width: 100vw;
+  max-height: 100dvh;
+  height: auto;
   border-radius: 0;
   transform-style: preserve-3d;
-  box-shadow: none;
+  box-shadow: 0 10px 40px -10px oklch(0.2 0.05 262 / 0.25);
   transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
