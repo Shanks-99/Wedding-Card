@@ -120,7 +120,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+  overflow: hidden;
   background:
     radial-gradient(120% 90% at 50% 0%, oklch(0.99 0.008 90), transparent 60%),
     var(--color-background);
@@ -135,18 +138,42 @@
   justify-content: center;
   align-items: center;
   user-select: none;
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+}
+
+@media (max-width: 639px) {
+  .card-3d-perspective.animate-float-soft {
+    animation: none;
+  }
 }
 
 .card-3d-doors {
   position: relative;
-  height: min(68vh, 560px);
-  aspect-ratio: 864 / 1440;
-  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+  border-radius: 0;
   transform-style: preserve-3d;
-  box-shadow:
-    0 4px 12px oklch(0.2 0.05 262 / 0.15),
-    0 40px 80px -25px oklch(0.2 0.05 262 / 0.35);
+  box-shadow: none;
   transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 640px) {
+  .card-3d-perspective {
+    width: auto;
+    height: auto;
+  }
+  .card-3d-doors {
+    width: auto;
+    height: min(78vh, 620px);
+    aspect-ratio: 864 / 1440;
+    border-radius: 16px;
+    box-shadow:
+      0 4px 12px oklch(0.2 0.05 262 / 0.15),
+      0 40px 80px -25px oklch(0.2 0.05 262 / 0.35);
+  }
 }
 
 .cover-opening .card-3d-doors {
@@ -162,7 +189,7 @@
 .card-interior {
   position: absolute;
   inset: 0;
-  border-radius: 12px;
+  border-radius: 0;
   background:
     radial-gradient(ellipse at 50% 25%, oklch(0.99 0.015 88), oklch(0.95 0.02 85)),
     var(--color-card);
@@ -183,8 +210,17 @@
   position: absolute;
   inset: 7px;
   border: 1px solid color-mix(in oklab, var(--gold) 35%, transparent);
-  border-radius: 8px;
+  border-radius: 4px;
   pointer-events: none;
+}
+
+@media (min-width: 640px) {
+  .card-interior {
+    border-radius: 16px;
+  }
+  .card-interior::before {
+    border-radius: 12px;
+  }
 }
 
 /* Two equal 50% split doors that meet in the center */
@@ -205,7 +241,7 @@
 .door-flap-left {
   left: 0;
   transform-origin: left center;
-  border-radius: 12px 0 0 12px;
+  border-radius: 0;
   overflow: hidden;
 }
 
@@ -213,17 +249,34 @@
 .door-flap-right {
   right: 0;
   transform-origin: right center;
-  border-radius: 0 12px 12px 0;
+  border-radius: 0;
   overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .door-flap-left {
+    border-radius: 16px 0 0 16px;
+  }
+  .door-flap-right {
+    border-radius: 0 16px 16px 0;
+  }
 }
 
 .door-img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
   display: block;
   user-select: none;
   -webkit-user-drag: none;
+}
+
+.door-flap-left .door-img {
+  object-position: right center;
+}
+
+.door-flap-right .door-img {
+  object-position: left center;
 }
 
 /* 3D dynamic depth shading */
