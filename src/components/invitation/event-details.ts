@@ -9,7 +9,7 @@ export const eventDetails = {
     credential: "Pakistan Navy",
   },
   bride: {
-    name: "Dr. Momina",
+    name: "Dr. Zunaira",
     parents: "Mr. & Mrs. Ahmed", // placeholder — real family name to be confirmed
     credential: "MBBS",
   },
@@ -30,9 +30,9 @@ export const eventDetails = {
   ],
   calendarLink:
     "https://calendar.google.com/calendar/render?action=TEMPLATE" +
-    "&text=" + encodeURIComponent("Wedding Ceremony — Lt. Umer & Dr. Momina") +
+    "&text=" + encodeURIComponent("Wedding Ceremony — Lt. Umer & Dr. Zunaira") +
     "&dates=20270214T130000Z/20270214T160000Z" +
-    "&details=" + encodeURIComponent("Wedding celebration of Lt. Umer & Dr. Momina") +
+    "&details=" + encodeURIComponent("Wedding celebration of Lt. Umer & Dr. Zunaira") +
     "&location=" + encodeURIComponent("Grand Marina Banquet, Clifton, Karachi"),
   mapsLink: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Clifton, Karachi"),
 } as const;

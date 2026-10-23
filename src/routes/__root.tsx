@@ -78,16 +78,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lt. Umer & Dr. Momina — Wedding Invitation" },
+      { title: "Lt. Umer & Dr. Zunaira — Wedding Invitation" },
       {
         name: "description",
-        content: "A cordial invitation to the wedding ceremony of Lt. Umer & Dr. Momina.",
+        content: "A cordial invitation to the wedding ceremony of Lt. Umer & Dr. Zunaira.",
       },
       { name: "author", content: "The Rana Family" },
-      { property: "og:title", content: "Lt. Umer & Dr. Momina — Wedding Invitation" },
+      { property: "og:title", content: "Lt. Umer & Dr. Zunaira — Wedding Invitation" },
       {
         property: "og:description",
-        content: "A cordial invitation to the wedding ceremony of Lt. Umer & Dr. Momina.",
+        content: "A cordial invitation to the wedding ceremony of Lt. Umer & Dr. Zunaira.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

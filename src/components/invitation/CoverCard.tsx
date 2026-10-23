@@ -38,7 +38,7 @@ export function CoverCard({ onOpen }: CoverCardProps) {
               </h3>
               <div className="w-12 h-[1px] bg-gold/50 my-2 mx-auto" />
               <p className="font-serif text-lg text-gold-deep font-medium">
-                Lt. Umer &amp; Dr. Momina
+                Lt. Umer &amp; Dr. Zunaira
               </p>
               <p className="font-sans text-[0.6rem] uppercase tracking-[0.25em] text-muted-foreground mt-2">
                 Tap to enter our journey
