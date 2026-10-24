@@ -151,9 +151,9 @@
 
 .card-3d-doors {
   position: relative;
-  /* Maintain exact 864x1086 aspect ratio of the cover card so it is never cropped */
-  width: min(100vw, calc(100dvh * (864 / 1086)));
-  aspect-ratio: 864 / 1086;
+  /* Maintain exact 3:4 (1536x2048) aspect ratio of the cover card so it is never cropped */
+  width: min(100vw, calc(100dvh * (3 / 4)));
+  aspect-ratio: 3 / 4;
   max-width: 100vw;
   max-height: 100dvh;
   height: auto;
@@ -161,6 +161,7 @@
   transform-style: preserve-3d;
   box-shadow: 0 10px 40px -10px oklch(0.2 0.05 262 / 0.25);
   transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 @media (min-width: 640px) {
@@ -170,8 +171,8 @@
   }
   .card-3d-doors {
     width: auto;
-    height: min(80vh, 640px);
-    aspect-ratio: 864 / 1086;
+    height: min(84vh, 720px);
+    aspect-ratio: 3 / 4;
     border-radius: 16px;
     box-shadow:
       0 4px 12px oklch(0.2 0.05 262 / 0.15),
@@ -317,12 +318,12 @@
 /* Gold Anchor Medallion Coin Seal */
 .coin-seal-btn {
   position: absolute;
-  top: 62.34%;
+  top: 67.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;
-  width: clamp(54px, 24.5%, 82px);
-  height: clamp(54px, 24.5%, 82px);
+  width: clamp(62px, 23%, 124px);
+  height: auto;
   aspect-ratio: 1;
   background: transparent;
   border: none;

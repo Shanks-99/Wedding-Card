@@ -26,7 +26,10 @@ export function CoverCard({ onOpen }: CoverCardProps) {
 
       {/* Mobile-width container with CSS 3D perspective: 1200px */}
       <div className="card-3d-perspective animate-float-soft">
-        <div className={`card-3d-doors ${opening ? "card-doors-open" : ""}`}>
+        <div
+          className={`card-3d-doors ${opening ? "card-doors-open" : ""}`}
+          onClick={handleOpen}
+        >
           {/* Interior invitation card revealed when doors part */}
           <div className="card-interior" aria-hidden={!opening}>
             <div className="card-interior-content">
